@@ -1,23 +1,23 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
 
 repositories {
     google()
-    jcenter()
+    mavenCentral()
 }
 
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 28
+        targetSdkVersion 34
         versionCode 3
         versionName "3.0.0"
     }
@@ -26,7 +26,7 @@ android {
 
 dependencies {
     implementation project(':android-pdf-viewer')
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'org.androidannotations:androidannotations-api:4.6.0'
     annotationProcessor "org.androidannotations:androidannotations:4.6.0"
 }
