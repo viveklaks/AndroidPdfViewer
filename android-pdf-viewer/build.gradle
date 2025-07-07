@@ -42,4 +42,6 @@ dependencies {
     api 'com.github.barteksc:pdfium-android:1.9.0'
 }
 
-apply from: 'bintray.gradle'
+// The publishing script depends on the Bintray plugin which is no longer
+// available. Comment out to prevent build errors when resolving the plugin.
+// apply from: 'bintray.gradle'
