@@ -58,6 +58,25 @@ implementation("com.github.barteksc:android-pdf-viewer:2.8.2")
 
 Library is available in jcenter repository, probably it'll be in Maven Central soon.
 
+## Building the sample offline
+
+Gradle 7.6 and the Android Gradle plugin 7.4.2 require JDK 11–17. Before
+building on a machine without network access, fetch all dependencies on an
+online machine:
+
+```bash
+./gradlew :sample:assembleDebug
+```
+
+Copy the project directory and your `~/.gradle` cache to the offline computer,
+ensure the Android SDK is installed, and run:
+
+```bash
+./gradlew --offline :sample:assembleDebug
+```
+
+The resulting APK will be in `sample/build/outputs/apk/debug/`.
+
 ## ProGuard
 If you are using ProGuard, add following rule to proguard config file:
 

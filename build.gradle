@@ -6,8 +6,11 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.4.2'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        // The following plugins were previously used for publishing the library
+        // but rely on the now defunct Bintray repository. They are commented out
+        // to avoid build failures due to missing artifacts.
+        // classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
+        // classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
 
