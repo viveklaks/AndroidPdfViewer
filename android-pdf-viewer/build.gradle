@@ -45,3 +45,4 @@ dependencies {
 // The publishing script depends on the Bintray plugin which is no longer
 // available. Comment out to prevent build errors when resolving the plugin.
 // apply from: 'bintray.gradle'
+
